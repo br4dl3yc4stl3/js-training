@@ -26,14 +26,14 @@ function lastLetter() {
 function fizzBuzz() {
     let number = parseInt(prompt("Enter your number: ", ""));
     for (let i = 1; i <= number; i++)  {
-        if (i % 3 === 0) {
-            console.log("Fizz");
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
         }  
-        if (i % 5 === 0) {
+        else if (i % 5 === 0) {
             console.log("Buzz")
         }
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz")
+        else if (i % 3 === 0) {
+            console.log("Fizz")
         }
         else {
             console.log(i);
